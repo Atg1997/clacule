@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule</title>
+    <link rel="stylesheet" href="js.css" >
+    <link rel="icon" href="R1.png" type="image/x-icon">
+</head>
+<body>
+    <div class="menu">
+        <h1> Calculatrice avancée  </h1>
+        <ul >
+            <li><a href="#Sous" class="lien">Soustraction </a></li>
+            <li><a href="#add" class="lien">Addition</a></li>
+            <li><a href="#puis" class="lien">Puissance</a></li>
+            <li><a href="#racine" class="lien">Racine</a></li>
+            <li><a href="#exp" class="lien">Exponentielle</a></li>
+            <li><a href="#trigo" class="lien">Cos, Sin, Tan</a></li>
+            <li><a href="#premiere" class="lien">Equation 1er degre</a></li>
+            <li><a href="#deuxieme" class="lien">Equation 2eme degre</a></li>
+            
+        </ul>
+    </div>
+<div class="one">
+    <div class="one" id="one">
+        <div class="Sous" id="Sous">
+            <h1><ins>Soustraction de 2 nombre </ins></h1>
+            <p>sous forme : a-b</p>
+            <label for="nbr1">Nombre 1 :</label>
+            <input type="number" id="nbr1" placeholder="entrer votre nombre" required>
+            <br><br>
+            <label for="nbr2">Nombre 2 :</label>
+            <input type="number" name="" id="nbr2" placeholder="entrer votre nombre" required>
+            <br><br>
+            <button onclick="Soustraction()">Resultat</button>
+            <div id="ResultatSous"></div>
+        </div>
+        
+   
+        <div class="add" id="add">
+            <h1><ins>Addition de 2 nombre </ins></h1>
+            <p>sous forme : a+b</p>
+            <label for="nombre1">Nombre 1 :</label>
+            <input type="number" id="nombre1" placeholder="entrer votre nombre" required>
+            <br><br>
+            <label for="nombre2">Nombre 2 :</label>
+            <input type="number" name="" id="nombre2" placeholder="entrer votre nombre" required>
+            <br><br>
+            <button onclick="Addition()">Resultat</button>
+            <div id="ResultatAdd"></div>
+        </div>
+
+        <div class="puis" id="puis">
+            <h1><ins>Puissance caree d'un nombre </ins></h1>
+            <p>sous forme : a²</p>
+            <label for="nombre">Nombre 1 :</label>
+            <input type="number" id="nombre" placeholder="entrer votre nombre" required>
+            <br><br>
+            <button onclick="Puissance()">Resultat</button>
+            <div id="ResultatPuis"></div>
+        </div>
+
+        <div class="racine" id="racine">
+            <h1><ins>Racine carree d'un nombre </ins></h1>
+            <p>sous forme : √a</p>
+            <label for="nbP">Nombre 1 :</label>
+            <input type="number" id="nbP" placeholder="entrer votre nombre > 0" required>
+            <br><br>
+            <button onclick="Racine()">Resultat</button>
+            <div id="ResultatRac"></div>
+        </div>
+
+        <div class="exp" id="exp">
+            <h1><ins>Exponentielle d'un nombre </ins></h1>
+            <p>sous forme : eⁿ </p>
+            <label for="nbE"> Nombre 1 :</label>
+            <input type="number" id="nbE" placeholder="entrer votre nombre" required>
+            <br><br>
+            <button onclick="EXP()">Resultat</button>
+            <div id="ResultatExp"></div>
+        </div>
+
+        <div class="trigo" id="trigo">
+            <h1><ins>Cos, Sin, Tan</ins></h1>
+            <p>sous form : cos(x) Sin(x) Tan(x)</p>
+            <label for="Angle">Angle :</label>
+            <input type="number" name="tri" id="Angle" placeholder="angle en degre" required >
+            <br><br>
+            <button onclick="Trigo()">Resultat</button>
+            <div id="ResultatTrigo1"></div>
+            <div id="ResultatTrigo2"></div>
+            <div id="ResultatTrigo3"></div>
+            
+
+
+        </div>
+ 
+        <div class="premiere" id="premiere">
+            <h1><ins>Résolution d'équation de 1er ordre</ins></h1>
+            <p>sous forme : aX+b </p>
+            <div class="coefficient1">
+                <label for="coe1">Coefficient 1 :</label>
+                <input type="number" id="coe1" placeholder="entrer votre nombre" required>
+                <br><br>
+                <label for="coe2">Coefficient 2 :</label>
+                <input type="number" id="coe2" placeholder="entrer votre nombre" required>
+                <br><br>
+                <button onclick="resoudreEquation1()">Résultat</button>
+            </div>
+            <div id="resultat1">
+                
+            </div>
+        </div>
+
+        <div class="deuxieme" id="deuxieme">
+            <p>Sous forme : aX²+bx+c</p>
+            <h1><ins>Résolution d'équation 2eme ordres</ins></h1>
+            <div class="coefficient2">
+                <label for="coe11">Coefficient 1 :</label>
+                <input type="number"  id="coe11" placeholder="entrer votre nombre" required>
+                <br><br>
+                <label for="coe21">Coefficient 2 :</label>
+                <input type="number"  id="coe21" placeholder="entrer votre nombre" required>
+                <br><br>
+                <label for="coe31">Coefficient 3 :</label>
+                <input type="number"  id="coe31" placeholder="entrer votre nombre" required>
+                <br><br>
+                <button onclick="resoudreEquation2()">Résultat</button>
+                <button type="reset" id="rest" onclick="reset()">Réinitialiser</button>
+    
+            </div>
+            <div id="delta"></div>
+            <div id="resultat2"></div>
+    
+        </div>
+    </div>
+
+    <div Class="page">
+        <ul>
+            <li>
+                <a href="page2.html" class="lien">Suivant</a>
+            </li>
+        </ul>
+         </div>
+    
+<div class="footer">
+    <p> &#169; 2014 Monday times  All rights reserved</p>
+</div>
+    <script>
+        function Soustraction(){
+            var a = parseFloat(document.getElementById("nbr1").value);
+            var b = parseFloat(document.getElementById("nbr2").value);
+            if(!isNaN(a) && !isNaN(b)){
+                var solution = a-b;
+                document.getElementById("ResultatSous").innerText = "le resultat est =" + solution;
+            }
+        }
+
+        function Addition(){
+            var a = parseFloat(document.getElementById("nombre1").value);
+            var b = parseFloat(document.getElementById("nombre2").value);
+            if(!isNaN(a) && !isNaN(b)){
+                var solution = a+b;
+                document.getElementById("ResultatAdd").innerText = "le resultat est =" + solution;
+            }
+        }
+
+        function Puissance(){
+            var a = parseFloat(document.getElementById("nombre").value);
+            if(!isNaN(a)){
+                var solution = a*a;
+                document.getElementById("ResultatPuis").innerText = "le resultat est =" + solution;
+            }
+        }
+
+        function Racine() {
+    var a = parseFloat(document.getElementById("nbP").value);
+
+    if (!isNaN(a) && a >= 0) {
+        var solution = Math.sqrt(a);
+        document.getElementById("ResultatRac").innerText = "Le résultat est : " + solution;
+        } else {
+        document.getElementById("ResultatRac").innerText = "Veuillez entrer un nombre valide et positif.";
+            }
+    }
+        
+        function EXP() {
+             var a = parseFloat(document.getElementById("nbE").value);
+             if (!isNaN(a)) {
+                    var solution = Math.exp(a);
+                document.getElementById("ResultatExp").innerText = "Le résultat est : " + solution;
+              } else {
+        document.getElementById("ResultatExp").innerText = "Veuillez entrer un nombre valide.";
+           }
+        }
+       
+        function Trigo() {
+    var a = parseFloat(document.getElementById("Angle").value);
+    if (!isNaN(a)) {
+        var solution1 = Math.cos(a);
+        var solution2 = Math.sin(a);
+        var solution3 = Math.tan(a);
+        document.getElementById("ResultatTrigo1").innerText = "Cos = " + solution1;
+        document.getElementById("ResultatTrigo2").innerText = "Sin = " + solution2;
+        document.getElementById("ResultatTrigo3").innerText = "Tan = " + solution3;
+    } else {
+        document.getElementById("ResultatTrigo1").innerText = "Veuillez entrer un nombre valide.";
+    }
+}
+
+        function resoudreEquation1() {
+            // Obtenir les coefficients depuis les champs de formulaire
+            var a = parseFloat(document.getElementById("coe1").value);
+            var b = parseFloat(document.getElementById("coe2").value);
+
+            // Vérifier si les coefficients sont valides
+            if (!isNaN(a) && !isNaN(b)) {
+                // Résoudre l'équation
+                if (a === 0) {
+                    if (b === 0) {
+                        document.getElementById("resultat1").innerText = "L'équation a une infinité de solutions.";
+                    } else {
+                        document.getElementById("resultat1").innerText = "L'équation n'a pas de solution.";
+                    }
+                } else {
+                    var solution = -b / a;
+                    document.getElementById("resultat1").innerText = "La solution de l'équation est x = " + solution;
+                }
+            } else {
+                document.getElementById("resultat1").innerText = "Coefficients invalides. Veuillez entrer des chiffres valides.";
+            }
+        }
+
+        function resoudreEquation2() {
+            // Obtenir les coefficients depuis les champs de formulaire
+            var a = parseFloat(document.getElementById("coe11").value);
+            var b = parseFloat(document.getElementById("coe21").value);
+            var c = parseFloat(document.getElementById("coe31").value);
+
+            // Vérifier si les coefficients sont valides
+            if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
+                // Résoudre l'équation
+                if (a === 0) {
+                    if (b === 0) {
+                        document.getElementById("resultat2").innerText = "L'équation a une infinité de solutions.";
+                    } else {
+                        var solution = -c / b;
+                        document.getElementById("resultat2").innerText = "La solution de l'équation est x = " + solution;
+                    }
+                } else {
+                    // Formule du discriminant pour l'équation quadratique
+                    var discriminant = b**2 - 4*a*c;
+
+                    if (discriminant > 0) {
+                        var solution1 = (-b + Math.sqrt(discriminant)) / (2*a);
+                        var solution2 = (-b - Math.sqrt(discriminant)) / (2*a);
+                        document.getElementById("delta").innerText = "Delta = " + discriminant;
+                        document.getElementById("resultat2").innerText = "Les solutions de l'équation sont x1 = " + solution1 + " et x2 = " + solution2;
+                    } else if (discriminant === 0) {
+                        var solution = -b / (2*a);
+                        document.getElementById("resultat2").innerText = "L'équation a une solution double : x = " + solution;
+                    } else {
+                        document.getElementById("resultat2").innerText = "L'équation n'a pas de solution réelle.";
+                    }
+                }
+            } else {
+                document.getElementById("resultat2").innerText = "Coefficients invalides. Veuillez entrer des chiffres valides.";
+            }
+        }
+
+    </script>
+</body>
+</html>
