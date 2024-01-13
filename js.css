@@ -1,7 +1,7 @@
 @media only screen and (max-width: 600px) {
     body {
         width:300px;
-        height:600px;
+        height:300px;
         margin: 0px;
         padding: 0px;
 
@@ -62,20 +62,20 @@
         background-color: rgb(59, 59, 59);
         flex-wrap: wrap;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .premiere, .deuxieme, .add,
      .Sous, .puis, .racine, .exp,
      .trigo{
         border-style: solid;
-        border-radius: 30px;
+        border-radius: 10px;
         box-shadow:10px 10px 10px black ;
         background-color: darkgray;
-        width: 500px;
-        height: 400px;
-        padding-left: 30px;
+        width: 166x;
+        height: 140px;
+        padding-left: 10px;
         cursor: pointer;
-        margin-top: 50px;
+        margin-top: 16px;
     }
     input {
         list-style-type: none;
@@ -86,8 +86,8 @@
         border-style: dotted;
         border-radius: 20px;
         background-color: rgb(141, 138, 138) ;
-        width: 400px;
-        height: 40px;
+        width: 140px;
+        height: 10px;
         margin-top: 10px;
         padding-top: 10px;
         padding-left: 10px;
