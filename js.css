@@ -180,7 +180,7 @@ input {
          box-shadow:10px 10px 10px black ;
          background-color: darkgray;
          width: 130px;
-         height: 310px;
+         height: 330px;
          padding-left: 10px;
          cursor: pointer;
          margin-top: 16px;
@@ -193,11 +193,7 @@ input {
             border-color: rgb(39, 32, 32);
             margin-left: 35px;
         }
-             button:hover {
-                background-color: white;
-                transition: 0.1s ease ;
-                width: 60px;
-             }
+           
     #resultat1, #resultat2, #delta, #ResultatSous,
      #ResultatAdd, #ResultatPuis, #ResultatRac, #ResultatExp, 
      #ResultatTrigo1 ,#ResultatTrigo2 , #ResultatTrigo3{
