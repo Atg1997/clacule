@@ -261,8 +261,9 @@
                     if (discriminant > 0) {
                         var solution1 = (-b + Math.sqrt(discriminant)) / (2*a);
                         var solution2 = (-b - Math.sqrt(discriminant)) / (2*a);
-                        document.getElementById("delta").innerText = "Delta = " + discriminant;
-                        document.getElementById("resultat2").innerText = "Les solutions de l'équation sont x1 = " + solution1 + " et x2 = " + solution2;
+                        document.getElementById("delta").innerText = "∆ = " + discriminant;
+                        document.getElementById("resultat2").innerText = " X1 = " + solution1 + " X2 = " + solution2;
+
                     } else if (discriminant === 0) {
                         var solution = -b / (2*a);
                         document.getElementById("resultat2").innerText = "L'équation a une solution double : x = " + solution;

@@ -131,7 +131,7 @@ input {
      }
      ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between ;
      }
    
      .lien {
@@ -142,10 +142,10 @@ input {
      a:hover{
 
          color: rgb(11, 11, 11);
-         transition: 0.2s linear;
+         transition: 0.2s none;
          font-size: 9px;
          padding: 0px;
-         height: 40px;
+         height: 10px;
          border-radius: 10px;
      }
      li { 
@@ -174,13 +174,13 @@ input {
      .premiere, .deuxieme, .add,
       .Sous, .puis, .racine, .exp,
       .trigo{
-        box-sizing:content-box;
+         box-sizing:content-box;
          border-style: solid;
          border-radius: 10px;
          box-shadow:10px 10px 10px black ;
          background-color: darkgray;
          width: 130px;
-         height: 300px;
+         height: 310px;
          padding-left: 10px;
          cursor: pointer;
          margin-top: 16px;
@@ -188,12 +188,24 @@ input {
      input {
          list-style-type: none;
      }
-         
-             
+        button {
+            border-radius: 8px;
+            border-color: rgb(39, 32, 32);
+            margin-left: 35px;
+        }
+             button:hover {
+                background-color: white;
+                transition: 0.1s ease ;
+                width: 60px;
+             }
     #resultat1, #resultat2, #delta, #ResultatSous,
      #ResultatAdd, #ResultatPuis, #ResultatRac, #ResultatExp, 
      #ResultatTrigo1 ,#ResultatTrigo2 , #ResultatTrigo3{
+        border-style: none;
+        background-color: white;
         font-size: 10px;
+        width: 115px;
+        color: rgb(0, 0, 0);
         }
 
      .page li {
